@@ -1,3 +1,16 @@
+.clearfix {
+    clear: both;
+}
+
+body {
+    min-width: 400px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container .nav-bar {
+    min-width: 400px;
+}
+
 .error {
     display; none;
 }
@@ -51,3 +64,14 @@ div.input-group input {
     border-color: #e0f1e9;
     color: #1d9d74;
 }
+
+
+.page-header {
+    width: 100%;
+}
+
+.page-header .form-wrap form {
+    margin: 50px auto;
+    width: 70%;
+}
+

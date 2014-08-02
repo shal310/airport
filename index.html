@@ -1,34 +1,72 @@
 <html>
-  <head>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="flights.js"></script>
-
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-  </head>
-  <body>
-      <div class="form-wrap">
-        <form action="" method="GET" class="form-horizontal" role="form">
-            <div class="input-group margin-bottom-sm form-group">
-              <span class="input-group-addon"><i class="fa fa-plane fa-fw"></i></span>
-              <input class="form-control" type="text" placeholder="From" id="from" required>
-              <span class="error from has-error"></span>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/libs/bootstrap-3.2.0/js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/js/flights.js"></script>
+        <link href="assets/libs/bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/libs/font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" />
+        <!--<link href="assets/libs/bootstrap-3.2.0/css/bootstrap-theme.css" rel="stylesheet" />-->
+        <link href="assets/libs/bootstrap-3.2.0/themes/united/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" media="screen" />
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">IntentMedia</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="themes">
+                                <li><a href="#">Default</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Purple</a></li>
+                                <li><a href="#">Green</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Signin</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="input-group margin-bottom-sm form-group">
-              <span class="input-group-addon"><i class="fa fa-plane fa-fw"></i></span>
-              <input class="form-control" type="text" placeholder="To" id="to" required>
-              <span class="error to has-error"></span>
-            </div>
-
-            <div class="btn-group open">
-                <button class="btn btn-primary" type="submit"><i class="fa fa-user fa-fw"></i>Submit</button>
-            </div>
-        </form>
-        <div id="result">
-            <i class="fa fa-exclamation-triangle"></i>
-            <span></span>
         </div>
-      </div>
-  </body>
+        <div class="page-header" id="banner">
+            <div class="row form-wrap">
+                <form action="" method="GET" class="form-horizontal" role="form">
+                    <div class="row">
+                        <div class="input-group margin-bottom-sm form-group col-sm-10">
+                            <span class="input-group-addon"><i class="fa fa-plane fa-fw"></i></span>
+                            <input class="form-control input-lg" type="text" placeholder="From" id="from" required>
+                            <span class="error from has-error"></span>
+                        </div>
+                        <div class="input-group margin-bottom-sm form-group col-sm-10">
+                            <span class="input-group-addon"><i class="fa fa-plane fa-fw"></i></span>
+                            <input class="form-control input-lg" type="text" placeholder="To" id="to" required>
+                            <span class="error to has-error"></span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="btn-group open clearfix">
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-user fa-fw"></i>Submit</button>
+                    </div>
+                </form>
+                <div id="result" class="clearfix>
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
