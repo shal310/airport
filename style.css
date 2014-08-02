@@ -1,0 +1,53 @@
+.error {
+    display; none;
+}
+
+.form-wrap {
+    padding: 20px;
+}
+
+div.input-group {
+    width: 200px;
+    border-radius: 10px;
+}
+
+div.input-group input {
+    border-radius: 10px;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555555;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.form-control {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.has-error {
+    color: red;
+}
+
+#result {
+    width: 450px;
+}
+
+#result,
+#result i {
+    display: none;
+    color: red;
+}
+
+#result.success {
+    background-color: #f1f9f7;
+    border-color: #e0f1e9;
+    color: #1d9d74;
+}

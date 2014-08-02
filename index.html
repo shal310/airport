@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="flights.js"></script>
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  </head>
+
+  <body>
+      <div class="form-wrap">
+        <form action="" method="GET" class="form-horizontal" role="form">
+            <div class="input-group margin-bottom-sm form-group">
+              <span class="input-group-addon"><i class="fa fa-plane fa-fw"></i></span>
+              <input class="form-control" type="text" placeholder="From" id="from" required>
+              <span class="error from has-error"></span>
+            </div>
+            <div class="input-group margin-bottom-sm form-group">
+              <span class="input-group-addon"><i class="fa fa-plane fa-fw"></i></span>
+              <input class="form-control" type="text" placeholder="To" id="to" required>
+              <span class="error to has-error"></span>
+            </div>
+
+            <div class="btn-group open">
+                <button class="btn btn-primary" type="submit"><i class="fa fa-user fa-fw"></i>Submit</button>
+            </div>
+        </form>
+        <div id="result">
+            <i class="fa fa-exclamation-triangle"></i>
+            <span></span>
+        </div>
+      </div>
+  </body>
+</html>
